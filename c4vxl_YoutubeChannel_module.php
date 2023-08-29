@@ -149,19 +149,3 @@ class YoutubeChannel {
         return $this->getVideo(0);
     }
 }
-
-$channelId = 'UCBR8-60-B28hp2BmDPdntcQ';
-$channel = new YoutubeChannel($channelId);
-
-$videos = $channel->getVideos();
-
-foreach ($videos as $video) {
-    echo "<br><br><br>----------------------------------------<br>";
-    echo "<b>Title:</b> " . $video['title'] . "<br>";
-    echo $video['embed'] . "<br>";
-    echo "<b>Published:</b> " . $video['published'] . "<br>";
-    echo "<b>Description:</b> " . $video['description'] . "<br>";
-    echo "<b>URL:</b> " . $video['url'] . "<br>";
-    echo "<b>Thumbnail:</b> " . $video['thumbnail'] . "<br>";
-    echo "----------------------------------------<br><br><br>";
-}
