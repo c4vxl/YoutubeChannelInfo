@@ -26,19 +26,13 @@ $channelName = $channel->channel_name;
 $createdAt = $channel->created_at;
 $videoCount = $channel->videoCount;
 ```
-3. Get an array of all videos on the channel:
-```php
-$channelName = $channel->channel_name;
-$createdAt = $channel->created_at;
-$videoCount = $channel->videoCount;
-```
 
-4. Get an array of all videos on the channel:
+3. Get an array of all videos on the channel:
 ```php
 $videos = $channel->getVideos();
 ```
 
-5. Retrieve details of a specific video using its index:
+4. Retrieve details of a specific video using its index:
 ```php
 $index = 0; // Index of the video in the videos array
 $video = $channel->getVideo($index);
