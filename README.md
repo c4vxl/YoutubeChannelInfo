@@ -11,10 +11,10 @@ This PHP module allows you to retrieve data from a YouTube channel using only th
 
 ## Usage
 
-1. Create an instance of the `YoutubeChannel` class by passing the channel ID as a parameter to the constructor.
+1. Create an instance of the `c4vxl_YoutubeChannel_module` class by passing the channel ID as a parameter to the constructor.
 
 ```php
-require_once('YoutubeChannel.php');
+require_once('c4vxl_YoutubeChannel_module.php');
 
 $channelId = 'YOUR_CHANNEL_ID';
 $channel = new YoutubeChannel($channelId);
